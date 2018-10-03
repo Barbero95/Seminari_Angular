@@ -1,0 +1,30 @@
+
+<!--
+Info d'un Usuari: <input type="text" name="InfoUser" value="">
+<input type="submit" value="Submit"><br>
+
+<div *ngIf="user">
+-->
+  <div>
+    <label>Nombre:
+      <input [(ngModel)] = "nameSearch" placeholder="nombre"/><br>
+      <button (click)="getInfoUser()">Submit</button>
+    </label>
+  </div>
+  
+  <h2>{{user.nombre | uppercase}} Detalles:</h2>
+  <h2>{{user.nombre}} Detalles:</h2>
+
+  <div><span>Nombre: </span>{{user.nombre}}</div>
+  <div><span>Vida: </span>{{user.vida}}</div>
+  <div><span>Ataque: </span>{{user.ataque}}</div>
+  <div><span>Defensa: </span>{{user.defensa}}</div>
+  <div><span>Resistencia: </span>{{user.resistencia}}</div>
+  <div><span>Money: </span>{{user.money}}</div><br>
+  
+  <div><span>Nombre introducido: </span>{{nameSearch}}</div><br>
+  
+
+  <!--
+</div>
+-->

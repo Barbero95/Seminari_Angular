@@ -1,0 +1,23 @@
+  <!--
+  Info de un Objecte: <input type="text" name="InfoObject" value="">
+  <input type="submit" name="submitObject" value="Submit"><br>
+  -->
+<div *ngIf="object">
+
+  <div>
+    <label>Id:
+      <input [(ngModel)]="id" placeholder="id"/><br>
+      <button (click)="getInfoObj">Submit</button>
+    </label>
+  </div>
+  
+  
+  <div><span>Nombre: </span>{{object.nombre}}</div>
+  <div><span>Id: </span>{{object.id}}</div>
+  <div><span>Tipo: </span>{{object.tipo}}</div>
+  <div><span>Decripcion: </span>{{object.decripcion}}</div>
+  <div><span>Valor: </span>{{object.valor}}</div>
+  <div><span>Coste: </span>{{object.coste}}</div>
+  
+  
+</div>
